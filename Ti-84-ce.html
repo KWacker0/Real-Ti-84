@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TI-84+ CE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container height-30">
+      <div class="col-6 mx-auto overall-border height-100">
+          <input class="input text-right w-100" type="text" value="0" id="viewPort">
+        </div>
+    </div>
+
+
+    <!--Button Conatiner -->
+     <div class="container">
+      <div class="col-6 mx-auto btn-section-border height-30bg-blue overall-color">
+        <!--Top row-->
+        
+        <!--2nd/ alpha Functions-->
+        <div class="row">
+          <div class="col">
+            <h6 class="tx-blue">stat plot</h6>
+            <h6 class="tx-green">f1</h6>
+          </div>
+          <div class="col">
+            <h6 class="tx-blue">tblset</h6>
+            <h6 class="tx-green">f2</h6>
+          </div>
+          <div class="col">
+            <h6 class="tx-blue">format</h6>
+            <h6 class="tx-green">f3</h6>
+          </div>
+          <div class="col">
+            <h6 class="tx-blue">calc</h6>
+            <h6 class="tx-green">f4</h6>
+          </div>
+          <div class="col">
+            <h6 class="tx-blue">table</h6>
+            <h6 class="tx-green">f5</h6>
+          </div>
+        </div>
+
+      <!--Buttons top row-->
+        <div class="row">
+          <div class="col">
+            <button class="btn grey-btn w-100" id="y=/statplot/f1">y=</button>
+          </div>
+          <div class="col">
+            <button class="btn grey-btn w-100" id="win/tblst/f2">window</button>
+          </div>
+          <div class="col">
+            <button class="btn grey-btn w-100" id="zoom/form/f3">zoom</button>
+          </div>
+          <div class="col">
+            <button class="btn grey-btn w-100" id="trace/calc/f4">trace</button>
+          </div>
+          <div class="col">
+            <button class="btn grey-btn w-100" id="graph/table/f5">graph</button>
+          </div>
+        </div>
+
+
+        <div class="row">
+
+          <div class="col-8">
+            
+            <!--Row With 2nd Button secondary Functions-->
+            <div class="row">
+              <div class="col">
+                <h6 class="disp-none">none</h6>
+              </div>
+                <div class="col">
+                <h6 class="tx-blue">quit</h6>
+              </div>
+                <div class="col">
+                <h6 class="tx-blue">ins</h6>
+                </div>
+              </div>
+
+              <!--Buttons-->
+          <div class="row">
+            <div class="col">
+              <button class="btn light-blue w-100" id="2nd">2nd</button>
+            </div>
+              <div class="col">
+              <button class="btn btn-color w-100" id="mode/quit">mode</button>
+            </div>
+              <div class="col">
+                <button class="btn btn-color w-100" id="del/ins">del</button>
+              </div>
+            </div>
+
+            <!--Alpha Row 2ndary Functions-->
+            <div class="row">
+              <div class="col">
+                <h6 class="tx-blue">A-lock</h6>
+              </div>
+                <div class="col">
+                <h6 class="tx-blue">link</h6>
+              </div>
+                <div class="col">
+                <h6 class="tx-blue">list</h6>
+                </div>
+              </div>
+
+              <!--Alpha Row Buttons-->
+            <div class="row">
+              <div class="col">
+                <button class="btn al-btn w-100" id="al/a-lock">alpha</button>
+              </div>
+                <div class="col">
+                <button class="btn btn-color w-100" id="vars/link">X,T,Theta,N</button>
+              </div>
+                <div class="col">
+                <button class="btn btn-color w-100" id="stat/list">stat</button>
+                </div>
+              </div>
+              </div>
+
+              <!--Direction Wheel Buttons-->
+              <div class="col-4">
+                <div class="row">
+                  <h6 class="tx-blue"></h6>
+                  <h6 class="tx-green"></h6>
+                </div>
+
+                <!--Direction Wheel-->
+          <div class ='circleBase' id='rotateMode'>
+            <button id="left" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-arrow-left">
+                <div class="bg-light">
+                  <p><i class="arrow left"></i></p>
+                </div>
+              </span>
+            </button>
+
+            <button id="right" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-arrow-right">
+                <div class="bg-light">
+                  <p><i class="arrow right"></i></p>
+                </div>
+              </span>
+            </button>
+ 
+            <button id="up" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-arrow-up">
+                <div class="bg-light">
+                  <p><i class="arrow up"></i></p>
+                </div>
+              </span>
+            </button>
+ 
+            <button id="down" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-arrow-down">
+                <div class="bg-light">
+                  <p><i class="arrow down"></i></p>
+                </div>
+              </span>
+            </button>
+
+          </div>
+          </div>
+          </div>
+
+          <!--4th Row 2ndary/ alpha functions-->
+          <div class="row">
+            <div class="col">
+              <h6 class="tx-blue">test</h6>
+              <h6 class="tx-green">A</h6>
+            </div>
+            <div class="col">
+              <h6 class="tx-blue">angle</h6>
+              <h6 class="tx-green">B</h6>
+            </div>
+            <div class="col">
+              <h6 class="tx-blue">draw</h6>
+              <h6 class="tx-green">C</h6>
+            </div>
+            <div class="col">
+              <h6 class="tx-blue">distr</h6>
+            </div>
+            <div class="col">
+              <h6 class="tx-blue disp-none"></h6>
+            </div>
+          </div>
+
+          <!--4th Row Buttons-->
+          <div class="row">
+            <div class="col">
+              <button class="btn-color btn w-100" id="math/test/a">math</button>
+            </div>
+            <div class="col">
+              <button class="btn-color btn w-100" id="apps/angle/b">apps</button>
+            </div>
+            <div class="col">
+              <button class="btn-color btn w-100" id="prgm/angle/b">prgm</button>
+            </div>
+            <div class="col">
+              <button class="btn-color btn w-100" id="vars/distr">vars</button>
+            </div>
+            <div class="col">
+              <button class="btn-color btn w-100" id="clear">clear</button>
+            </div>
+          </div>
+
+          <!--5th Row 2ndary/Alpha Functions-->
+          <div class="row">
+            <div class="col">
+              <h6 class="tx-blue">matrix</h6>
+              <h6 class="tx-green">D</h6>
+            </div>
+            <div class="col">
+              <h6 class="tx-blue">sin^-1</h6>
+              <h6 class="tx-green">E</h6>
+            </div>
+            <div class="col">
+              <h6 class="tx-blue">cos^-1</h6>
+              <h6 class="tx-green">F</h6>
+            </div>
+            <div class="col">
+              <h6 class="tx-blue">tan^-1</h6>
+              <h6 class="tx-green">G</h6>
+            </div>
+            <div class="col">
+              <h6 class="tx-blue">Pi</h6>
+              <h6 class="tx-green">H</h6>
+            </div>
+          </div>
+
+          <!--5th row buttons-->
+          <div class="row">
+            <div class="col">
+              <button class="btn-color btn w-100" id="x.10/matrix/a">X^-1</button>
+            </div>
+            <div class="col">
+              <button class="btn-color btn w-100" id="sin/invrs/e">sin^-1</button>
+            </div>
+            <div class="col">
+              <button class="btn-color btn w-100" id="cos/invrs/f">cos</button>
+            </div>
+            <div class="col">
+              <button class="btn-color btn w-100" id="tan/invrs/G">tan</button>
+            </div>
+            <div class="col">
+              <button class="btn-color btn w-100" id="power/pi/h">^</button>
+            </div>
+          </div>
+
+          <!--6th row alpha/2ndary functions-->
+          <div class="row">
+            <div class="col">
+              <h6 class="tx-blue">Root</h6>
+              <h6 class="tx-green">I</h6>
+            </div>
+            <div class="col">
+              <h6 class="tx-blue">EE</h6>
+              <h6 class="tx-green">J</h6>
+            </div>
+            <div class="col">
+              <h6 class="tx-blue">{</h6>
+              <h6 class="tx-green">K</h6>
+            </div>
+            <div class="col">
+              <h6 class="tx-blue">}</h6>
+              <h6 class="tx-green">L</h6>
+            </div>
+            <div class="col">
+              <h6 class="tx-blue">e</h6>
+              <h6 class="tx-green">M</h6>
+            </div>
+          </div>
+
+          <!--6th row buttons-->
+          <div class="row">
+            <div class="col">
+              <button class="btn-color btn w-100" id="squar/root/i">X^2</button>
+            </div>
+            <div class="col">
+              <button class="btn-color btn w-100" id=",/EE/j">,</button>
+            </div>
+            <div class="col">
+              <button class="btn-color btn w-100" id="(/{/k">(</button>
+            </div>
+            <div class="col">
+              <button class="btn-color btn w-100" id=")/}/l">)</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-color grey-btn w-100" id="divide/e/m">\u00f7</button>
+            </div>
+          </div>
+          
+          <!--7th row 2ndary/alpha Functions-->
+          <div class="row">
+           <div class="col">
+            <h6 class="tx-blue">10^x</h6>
+            <h6 class="tx-green"><N/h6>
+           </div>
+           <div class="col">
+            <h6 class="tx-blue">u</h6>
+            <h6 class="tx-green">O</h6>
+           </div>
+           <div class="col">
+            <h6 class="tx-blue">v</h6>
+            <h6 class="tx-green">P</h6>
+           </div>
+           <div class="col">
+            <h6 class="tx-blue">w</h6>
+            <h6 class="tx-green">Q</h6>
+           </div>
+           <div class="col">
+            <h6 class="tx-blue">[</h6>
+            <h6 class="tx-green">R</h6>
+           </div>
+          </div>
+
+          <!--7th Row Buttons-->
+          <div class="row">
+            <div class="col">
+              <buton class="btn btn-color w-100" id="log/powerx/n">loq</buton>
+            </div>
+            <div class="col">
+              <buton class="btn btn-num w-100" id="7/u/O">7</buton>
+            </div>
+            <div class="col">
+              <buton class="btn btn-num w-100" id="8/v/p">8</buton>
+            </div>
+            <div class="col">
+              <buton class="btn btn-num w-100" id="9/w/Q">9</buton>
+            </div>
+            <div class="col">
+              <buton class="btn grey-btn w-100" id="X/[/r">X</buton>
+            </div>
+          </div>
+
+          <!--8th row 2ndary/ Aplha Functions-->
+          <div class="row">
+            <div class="col">
+             <h6 class="tx-blue">e^X</h6>
+             <h6 class="tx-green">S</h6>
+            </div>
+            <div class="col">
+             <h6 class="tx-blue">L4</h6>
+             <h6 class="tx-green">T</h6>
+            </div>
+            <div class="col">
+             <h6 class="tx-blue">L5</h6>
+             <h6 class="tx-green">U</h6>
+            </div>
+            <div class="col">
+             <h6 class="tx-blue">L6</h6>
+             <h6 class="tx-green">V</h6>
+            </div>
+            <div class="col">
+             <h6 class="tx-blue">]</h6>
+             <h6 class="tx-green">W</h6>
+            </div>
+           </div>
+
+           <!--8th Row Buttons-->
+           <div class="row">
+             <div class="col">
+               <buton class="btn btn-color w-100" id="ln/eX/s">Ln</buton>
+             </div>
+             <div class="col">
+               <buton class="btn btn-num w-100" id="4/l4/t">4</buton>
+             </div>
+             <div class="col">
+               <buton class="btn btn-num w-100" id="5/l5/u">5</buton>
+             </div>
+             <div class="col">
+               <buton class="btn btn-num w-100" id="6/l6/v">6</buton>
+             </div>
+             <div class="col">
+               <buton class="btn grey-btn w-100" id="-/]/w">-</buton>
+             </div>
+           </div>
+
+           <!--9th row 2ndary/ alpha Functions-->
+           <div class="row">
+            <div class="col">
+             <h6 class="tx-blue">rcl</h6>
+             <h6 class="tx-green">X</h6>
+            </div>
+            <div class="col">
+             <h6 class="tx-blue">L1</h6>
+             <h6 class="tx-green">Y</h6>
+            </div>
+            <div class="col">
+             <h6 class="tx-blue">L2</h6>
+             <h6 class="tx-green">Z</h6>
+            </div>
+            <div class="col">
+             <h6 class="tx-blue">L3</h6>
+             <h6 class="tx-green">Theta</h6>
+            </div>
+            <div class="col">
+             <h6 class="tx-blue">mem</h6>
+             <h6 class="tx-green">"</h6>
+            </div>
+           </div>
+
+           <!--9th row Buttons-->
+           <div class="row">
+             <div class="col">
+               <buton class="btn btn-color w-100" id="sto/rcl/x">sto-></buton>
+             </div>
+             <div class="col">
+               <buton class="btn btn-num w-100" id="1/l1/y">1</buton>
+             </div>
+             <div class="col">
+               <buton class="btn btn-num w-100" id="2/l2/z">2</buton>
+             </div>
+             <div class="col">
+               <buton class="btn btn-num w-100" id="3/l3/theta">3</buton>
+             </div>
+             <div class="col">
+               <buton class="btn grey-btn w-100" id="+/mem/opnQto">+</buton>
+             </div>
+           </div>
+
+           <!--Last Row 2ndary/ alpha functions-->
+           <div class="row">
+            <div class="col">
+             <h6 class="tx-blue">off</h6>
+            </div>
+            <div class="col">
+             <h6 class="tx-blue">catalog</h6>
+             <h6 class="tx-green">_</h6>
+            </div>
+            <div class="col">
+             <h6 class="tx-blue">i</h6>
+             <h6 class="tx-green">:</h6>
+            </div>
+            <div class="col">
+             <h6 class="tx-blue">ans</h6>
+             <h6 class="tx-green">?</h6>
+            </div>
+            <div class="col">
+             <h6 class="tx-blue">ety</h6>
+             <h6 class="tx-green">slv</h6>
+            </div>
+           </div>
+           
+           <!--Last Row Buttons-->
+           <div class="row">
+             <div class="col">
+               <buton class="btn btn-color w-100" id="on/off">On</buton>
+             </div>
+             <div class="col">
+               <buton class="btn btn-num w-100" id="0/catalog/_">0</buton>
+             </div>
+             <div class="col">
+               <buton class="btn btn-num w-100" id="./i/:">.</buton>
+             </div>
+             <div class="col">
+               <buton class="btn btn-num w-100" id="(-)/and/?">(-)</buton>
+             </div>
+             <div class="col">
+               <buton class="btn grey-btn w-100" id="eneter/entery/solve">enter</buton>
+             </div>
+           </div>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
