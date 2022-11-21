@@ -20,6 +20,8 @@ document.getElementById("divide/e/m").addEventListener('click', divide);
 document.getElementById("X/[/r").addEventListener('click', Mult);
 document.getElementById("-/]/w").addEventListener('click', Sub);
 document.getElementById("+/mem/opnQto").addEventListener('click', Sum);
+document.getElementById("enter/entery/solve").addEventListener('click', enter)
+document.getElementById("clear").addEventListener('click', clear)
 
 function nums(e) {
     if(e.target.id >= "0/catalog/_" && e.target.id <= "9/w/Q") {
@@ -32,11 +34,11 @@ function nums(e) {
     }
 }
 function divide(e) {
-    dispNum = dispNum + " \u00f7 ";
+    dispNum = dispNum + " / ";
     viewPort.value = dispNum;
 }
 function Mult(e) {
-    dispNum = dispNum + " X ";
+    dispNum = dispNum + " * ";
     viewPort.value = dispNum;
 }
 function Sub(e) {
@@ -45,5 +47,14 @@ function Sub(e) {
 }
 function Sum(e) {
     dispNum = dispNum + " + ";
+    viewPort.value = dispNum;
+}
+function enter(e) {
+    Number(dispNum)
+    let awnser = eval(dispNum)
+    viewPort.value = awnser;
+}
+function clear(e) {
+    dispNum = 0;
     viewPort.value = dispNum;
 }
