@@ -1,7 +1,7 @@
-89`     ``````````````````````lhtml, body {
-    height: 100%;
-    width: 100%;
-    margin: auto;
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
   }
   .bg-blue {
     background-color: #00fbff;
